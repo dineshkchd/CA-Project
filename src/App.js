@@ -26,11 +26,14 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-      <Suspense fallback={<div> <Loading /></div>}>
+        <AppRouter />
+        <Analytics />
+        <SpeedInsights />
+        {/* <Suspense fallback={<div> <Loading /></div>}>
           <AppRouter />
           <Analytics />
           <SpeedInsights />
-        </Suspense>
+        </Suspense> */}
 
         {/* <Suspense fallback={<Loading />}>
          

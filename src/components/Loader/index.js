@@ -21,7 +21,7 @@ const Loading = () => {
             </text>
 
             <text x="50%" y="55%" text-anchor="middle">
-              Purminder Kaur & Associates
+              Tax Center
             </text>
           </svg>
         </div>

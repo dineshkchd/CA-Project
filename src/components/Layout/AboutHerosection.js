@@ -1,56 +1,48 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row, Col,Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBusinessTime } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 function AboutHerosection({ src }) {
   return (
     <section className="hm-about-sec">
       <Container>
-        <div className="text-center mt-5 mb-5 hero-banner-sub-text-top">
-          <h1>
-            {" "}
-            <b>Welcome to Purminder Kaur & Associates</b>
-          </h1>
-          <h3>
-            <b>One Stop solutions for all financial needs</b>
-          </h3>
-        </div>
-        <Row className="justify-content-md-center">
-          <Col md={6}>
-            <ul className="about-list">
-              <Link to="/service/IncomeTax/ITR_filing">
-                <li className="animated-list-item">Taxation</li>
-              </Link>
-              <Link to="/service/auditing">
-                <li className="animated-list-item">Auditing</li>
-              </Link>
-              <Link to="/service/accounting">
-                <li className="animated-list-item">Accounting</li>
-              </Link>
-              <Link to="service/registration/proprietorship">
-                <li className="animated-list-item">Registration</li>
-              </Link>
-              <Link to="service/advisory/capital_gain">
-                <li className="animated-list-item">ADVISORY</li>
-              </Link>
-            </ul>
+        <Row className="align-items-center">
+          <Col xs={12} md={12} className="text-center text-md-left">
+            <div className="hero">
+              <h1>We're Tax Center</h1>
+              <h3>A New Breed of Accountants</h3>
+            </div>
           </Col>
-          <Col md={6}>
-            <img
-              alt="aboutimage"
-              src={src}
-              className="homeaboutimage jumping-animation"
-            />
+          <Col xs={12} md={12} className="text-center">
+            <div className="mb-5 hero-btn">
+              <button className="left-btn">
+              <FontAwesomeIcon
+                icon={faUser}
+                size="sm"
+                style={{ color: "#fff" }} 
+              />   Personal
+              </button>
+              <button className="right-btn">
+              <FontAwesomeIcon
+                icon={faBusinessTime}
+                size="sm"
+                style={{ color: "#fff" }} 
+              />  Business
+              </button>
+            </div>
+            <div className="">
+              <button className="bottom-btn">
+              <FontAwesomeIcon
+                icon={faLaptop}
+                size="sm"
+                style={{ color: "#fff" }} 
+              /> Booking Online Tax Return
+              </button>
+            </div>
           </Col>
-          <div className="text-center mt-5 mb-5 hero-banner-sub-text">
-            <h1>
-              {" "}
-              <b>Welcome to Purminder Kaur & Associates</b>
-            </h1>
-            <h3>
-              <b>One Stop solutions for all financial needs</b>
-            </h3>
-          </div>
         </Row>
       </Container>
     </section>

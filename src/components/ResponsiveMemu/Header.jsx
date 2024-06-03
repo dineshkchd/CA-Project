@@ -3,13 +3,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/ca_logo.png";
+import Logo from "../../assets/images/logo-taxcenter.jpg";
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "react-bootstrap";
 
 
 
@@ -65,7 +61,7 @@ const Header = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            height: scrolled ? "18vh" : "18vh", // Change height to auto to ensure content is visible
+            height: scrolled ? "10vh" : "12vh", // Change height to auto to ensure content is visible
             transition: "background-color 0.3s ease", // Smooth transition for background color change
           }}
         >
@@ -77,24 +73,12 @@ const Header = () => {
                     src={Logo}
                     alt=""
                     className="header-logo"
-                    style={{ width: "200px", marginTop: "-26px" }}
+                    style={{ width: "80px", marginTop: "5px" }}
                   />
                 </Link>
               </div>
             </Col>
             <Col>
-              <div className="header-phone text-end ml-5">
-                <Button>
-                  <a href="/schedule-call"> Schedule a Call</a>
-                 </Button>
-                {/* <a href="tel:+91 964-687-4599">
-                  <FontAwesomeIcon icon={faPhoneSquare} size="xl" />
-                  &nbsp;&nbsp; +91 964-687-4599
-                </a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                <a href="mailto:info@capka.co.in">
-                <FontAwesomeIcon icon={faEnvelope} size="xl" /> &nbsp;&nbsp; 
-                  info@capka.co.in</a> */}
-              </div>
               <Navbar />
               <MobileNav />
             </Col>

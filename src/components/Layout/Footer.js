@@ -6,6 +6,8 @@ import {
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/logo-taxcenter.jpg";
+import "../fontAwesomeSetup"
 
 const Footer = () => {
   return (
@@ -14,70 +16,18 @@ const Footer = () => {
         <div class="foote-link">
           <div class="container">
             <div class="row">
-              <div class="col-md-5">
-                <div class="row">
-                  <div class="col-md-5">
-                    <h2>Quick links</h2>
-                    <ul class="foot-link-list">
-                      <li>
-                        <Link to="/service/registration/proprietorship">
-                          Registration
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/service/auditing">Auditing</Link>
-                      </li>
-                      <li>
-                        <Link to="/service/IncomeTax/ITR_filing">
-                          Income Tax
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/service/book_keeping">Book Keeping</Link>
-                      </li>
-                      <li>
-                        <Link to="/service/GST/GST_registration">GST</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <h2>About Us</h2>
-                    <ul class="foot-link-list">
-                      <li>
-                        <Link class="" to="/about">
-                          Vision
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="" to="/about">
-                          Mission
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="" to="/about">
-                          Value
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="" to="/privacy_policy">
-                          Privacy Policy
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="col-md-4">
+                <div className="footer-logo">
+                  <img src={Logo} alt="" width={130} />
                 </div>
-              </div>
-              <div class="col-md-3">
-                <h2>Subscribe Now</h2>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter email address"
-                  id=""
-                  name=""
-                  value=""
-                />
-                <input type="submit" class="btn btn-join" value="Subscribe" />
+                <div className="footer icon">
+                  <FontAwesomeIcon icon={faPhone} style={{marginLeft:"10px"}}/>
+                  <FontAwesomeIcon icon={faEnvelope} style={{marginLeft:"10px"}}/>
+                  <FontAwesomeIcon icon={['fab', 'facebook']}style={{marginLeft:"10px"}} />
+                  <FontAwesomeIcon icon={['fab', 'instagram']} style={{marginLeft:"10px"}} />
+                  <FontAwesomeIcon icon={['fab', 'linkedin']} style={{marginLeft:"10px"}}/>
+                  <FontAwesomeIcon icon={['fab', 'youtube']} style={{marginLeft:"10px"}} />
+                </div>             
               </div>
               <div class="col-md-4">
                 <h2>Connect With Us</h2>
@@ -105,7 +55,7 @@ const Footer = () => {
                       info@capka.co.in
                     </a>
                   </li>
-                </ul>
+                </ul> 
               </div>
             </div>
           </div>
@@ -113,9 +63,9 @@ const Footer = () => {
         <div class="copy-right">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p>
-                  © Purminder Kaur & Associates - All Rights Reserved.
+                  © Tex Center - All Rights Reserved.
                   {new Date().getFullYear()} Created by Purminder Kaur.
                 </p>
               </div>

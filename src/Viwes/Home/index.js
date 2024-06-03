@@ -17,7 +17,7 @@ const index = () => {
       <Servicesection />
       {/* <NewsSection /
       > */} 
-      <Supportsection />
+      {/* <Supportsection /> */}
       <Footer />
     </>
   );

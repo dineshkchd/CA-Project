@@ -10,15 +10,11 @@ const Sevicesection = () => {
       <section className="hm-services-sec">
         <Container>
           <Row>
-            <Col className="hm-services-title">
-              <h2>
-                We <span> Cater</span>
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="">
-              <Card />
+            <Col>
+              <div className="container">
+
+                
+              </div>
             </Col>
           </Row>
         </Container>
