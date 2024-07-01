@@ -24,10 +24,6 @@ export const menuItemsData = [
     url: "/about",
   },
   {
-    title: "Franchise info",
-    url: "/about",
-  },
-  {
     title: "Contact",
     url: "/about",
   },

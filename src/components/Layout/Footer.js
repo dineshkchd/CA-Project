@@ -37,9 +37,9 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faMapMarkerAlt} /> &nbsp;
                       <span>
                         {" "}
-                        SCO 79, First Floor, Phase 11, Tarf Kumbra, Sahibzada
-                        Ajit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Singh Nagar,
-                        Punjab 160062
+                        SCO 78-79, First Floor, Phase 11, <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tarf Kumbra, Sahibzada
+                        Ajit Singh Nagar,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Punjab 160062
                       </span>
                     </Link>
                   </li>
@@ -52,7 +52,7 @@ const Footer = () => {
                   <li>
                     <a href="mailto:info@capka.co.in">
                       <FontAwesomeIcon icon={faEnvelope} /> &nbsp;&nbsp;
-                      info@capka.co.in
+                      info@taxcentre.co.in
                     </a>
                   </li>
                 </ul> 
@@ -66,7 +66,7 @@ const Footer = () => {
               <div class="col-md-12">
                 <p>
                   © Tex Center - All Rights Reserved.
-                  {new Date().getFullYear()} Created by Purminder Kaur.
+                  {new Date().getFullYear()} Created by tax centre
                 </p>
               </div>
               <div class="col-md-4 text-end"></div>

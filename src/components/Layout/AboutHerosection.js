@@ -12,8 +12,8 @@ function AboutHerosection({ src }) {
         <Row className="align-items-center">
           <Col xs={12} md={12} className="text-center text-md-left">
             <div className="hero">
-              <h1>We're Tax Center</h1>
-              <h3>A New Breed of Accountants</h3>
+              <h1>We're Tax Centre</h1>
+              <h3>A Team of professional around you</h3>
             </div>
           </Col>
           <Col xs={12} md={12} className="text-center">
