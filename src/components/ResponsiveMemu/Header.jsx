@@ -61,7 +61,7 @@ const Header = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            height: scrolled ? "10vh" : "12vh", // Change height to auto to ensure content is visible
+            height: scrolled ? "12vh" : "12vh", // Change height to auto to ensure content is visible
             transition: "background-color 0.3s ease", // Smooth transition for background color change
           }}
         >
@@ -73,7 +73,7 @@ const Header = () => {
                     src={Logo}
                     alt=""
                     className="header-logo"
-                    style={{ width: "80px", marginTop: "5px" }}
+                    style={{ width: "60px", marginTop: "5px" }}
                   />
                 </Link>
               </div>
